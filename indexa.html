@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoEasyEarn</title>
+    <style>
+   body{font-family:system-ui;background-color: rgb(45, 3, 211);}
+   *{margin: 0 auto;}
+   .logo{border-radius: 100px;background-color:#fff;height: 150px;width: 150px;margin-top: 10px;box-shadow: 0px 0px 10px rgba(0,0,0,0.4);}
+   .logo:hover{box-shadow: 0px 0px 0px ;transition: all 0.4s;}
+   .heading{text-align: center;}
+   .head1{color: rgb(252, 252, 252);margin-top: 5px;}
+   .head2{color: rgba(255, 255, 255);margin-top: 15px;}
+   .tasks{margin-bottom: 10px; padding: 5px; background-color: #fff;width: 300px;margin-top: 15px;border-radius: 15px;box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;}
+    @media (max-width:600px) {
+        .tasks{width: 200px;}
+        
+    }
+    .tasks1{margin-top: 15px; width: 200px; padding: 5px; background-color: #fff;border-radius: 15px;box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;}
+    .app{margin-top: 4px;margin-bottom: -10px; height: 50px;background-color: rgb(0, 0, 255,0.7);border-radius: 12px;padding: 2px;}
+    .app1{margin-top: 4px;margin-bottom: -10px; height: 50px;background-color: rgb(0, 0, 255,0.7);border-radius: 12px;padding: 2px;}
+    .app2{margin-top: 4px;margin-bottom: -10px;height: 50px;background-color: rgb(0, 0, 255,0.7);border-radius: 12px;padding: 2px;}
+    .app4{margin-top: 4px;height: 50px;background-color: rgb(0, 0, 255,0.7);border-radius: 12px;padding: 2px;}
+    .head4{text-align: center;}
+    .p2{color: rgb(255, 255, 255);font-size: 14px;padding:4px;}
+    /* .taskB{height: 10px; border-radius: 7px;border: 0.2px solid #000;width: 95px;background-color: yellow;text-decoration: none;color: #000;}
+    .taskC{height: 10px; border-radius: 7px;border: 0.2px solid #000;width: 95px;background-color: yellow;text-decoration: none;color: #000;}
+    .taskD{height: 10px; border-radius: 7px;border: 0.2px solid #000;width: 95px;background-color: yellow;text-decoration: none;color: #000;}
+    .taskB:hover{background-color: red;border: 0.2px solid #000;color: #fff;}f
+    .taskC:hover{background-color: red;border: 0.2px solid #000;color: rgb(255, 255, 255);}
+    .taskD:hover{background-color: red;border: 0.2px solid #000;color: #fff;}
+    /* .taskB .p2{color: #fff;}
+    .taskC .p2{color: #fff;}
+    .taskD .p2{color: #fff;} */ 
+
+    .hidden{position: fixed;top: -10000px;}
+    .upi{text-align: center;margin-top: 10px;}
+    .numbR{border-radius: 10px;border: 0.2px solid #000;padding: 5px;margin-top: 5px;}
+    .UPID{border-radius: 10px;border: 0.2px solid #000;padding: 5px;}
+    .but1{background-color: rgb(17, 0, 255);color: #fff;border:0px;box-shadow: rgba(0,0,0,0.4) 0px 0px 10px; height: 25px;width: 60px;border-radius: 10px;margin-top: 5px;}
+    .but1:hover{background-color: red;}   
+    .numbR::placeholder{font-size: 12px;} 
+    .UPID::placeholder{font-size: 12px;}
+    .h32{animation-duration: 0ms; animation-name: h32o;animation-iteration-count: infinite;}
+    .tNtf span{height: 7px; position:fixed;left:24px;bottom:-70px;display:inline-flex;align-items:center;text-align:center;justify-content:center;margin-bottom:20px;z-index:99981;background:#323232;color:rgba(255,255,255,.8);font-size:17px;font-family:inherit;border-radius:3px;padding:13px;opacity:0;transition:all .1s ease;animation:slideinwards 2s ease forwards;-webkit-animation:slideinwards 2s ease forwards}
+  @media screen and (max-width:500px){.tNtf span{margin-bottom:20px;left:20px;right:20px;font-size:15px}}
+  @keyframes slideinwards{0%{opacity:0}20%{opacity:1;bottom:0}50%{opacity:1;bottom:0}80%{opacity:1;bottom:0}100%{opacity:0;bottom:-70px;visibility:hidden}}
+  @-webkit-keyframes slideinwards{0%{opacity:0}20%{opacity:1;bottom:0}50%{opacity:1;bottom:0}80%{opacity:1;bottom:0}100%{opacity:0;bottom:-70px;visibility:hidden}}
+  .drK .tNtf span{box-shadow:0 10px 40px rgba(0,0,0,.2)}
+  footer{text-align: center;margin-top: 10px;padding: 10px;color: #fff;font-size: 14px;}
+    .fa{text-decoration: none;color: red;}
+    .taskB{text-decoration: none;color: #000;font-size: 13px;background-color: yellow;text-align: center;margin-top: -14px;border-radius: 10px;width: 60px;box-shadow: rgba(0,0,0,.2) 0px 0px 10px; border: 0px; padding: 2px 2px 2px;}
+    .taskB:hover{background-color: red;color: #fff;transition: all 0.4s;}
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+    <img src="" alt="logo" class="logo">
+</div>
+
+  <div class="heading">
+    <h2 class="head2">Welcome India</h2>
+   <p class="head1">Complete Simple Task & Get Direct <b>100rs</b> In Your UPI Wallet</p>
+</div>
+  
+<div id="tasks01" class="tasks1">
+    <div class="upi" id="upiS">
+            <input required placeholder="Enter your UPI Id" type="text" class="UPID" id="inpU">
+        <br>
+            <input required placeholder="Enter your Phone Number" type="number" class="numbR" id="inpM">
+        <br><button class="but1" id="sumb1">submit</button>
+        <p id="p9"></p>
+    </div></div>
+    <div class="hidden" id="main2">
+        <div class="tasks">
+    <!-- <h3 class="head4">Complete All Tasks Bellow!</h3> -->
+  <div class="app">
+  <p class="p2">Download APK Register & Register On The App - <b>50rs</b></p>
+  </div>
+  <button id="butW" onclick="toast(f)" href="https://enloweb.com/vjnzpe339w?key=4fc57ac71f22afef930d7bdf7209ee10" class="taskB">start</button> <!--<button onclick="toast(e)" id="checkA" class="taskB">check</button>-->
+  <div class="app1">
+    <p class="p2">Open And Click Allow To Receve Rewards  - <b>25</b></p>
+  </div>
+  <button id="butW" onclick="toast(h)" href="https://enloweb.com/kv63dkxfmr?key=7b7a11f7bdf3b40fae1bfa4dfa498e16" class="taskB">start</button> <!--<button onclick="toast(e)" id="checkB" class="taskB">check</button>-->
+  <div class="app2">
+    <p class="p2">Watch Full Ad / Video - <b>25rs</b></p>
+  </div>
+  <button id="butW" onclick="toast(g)" class="taskB" href="https://enloweb.com/rat36npcx?key=234e74a8bbb3bd1cd059ee10e1854601">start</button> <button onclick="toast(e)" id="checkC" class="taskB" href="https://t.me/RahulHerT">withdraw</a>
+  </div></div>
+  <div id='toastNotifC' class='tNtf'></div>
+  <footer>
+    <div class="credit">Copyright 2022 <a href="#" class="fa">GoEasyEarn</a> All Rights Reserved</div>
+  </footer>
+    <script>
+   let upiW = document.getElementById('upiS');
+   let upiB = document.getElementById('sumb1');
+   let  sumU = document.getElementById('inpU').value;
+   let sumM = document.getElementById('inpM').value;
+   let mainS = document.getElementById('main2');
+      
+  upiB.onclick = () => {
+    // upiW.style.position = 'fixed';
+    // upiW.style.left = '10000px';
+    upiW.style.marginTop = '0px'
+    upiW.style.marginBottom = '0px'
+    upiW.innerHTML = '<h3 class="h32">Complete Below Tasks To Receve 100rs</h3>'
+    mainS.style.transition = 'all 0.3s';
+    mainS.className = "null";
+    // tasks0.style.position = 'fixed';
+    // tasks0.style.left = '1000px';
+
+  }
+
+    </script>
+    <script>
+        let f = 'validating install :)';
+        let e = 'tasks not completed :(';
+        let h = 'validating push notofication :)';
+        let g = 'validating watchtime :)';
+        function toast(e){var tNotif = document.getElementById('toastNotifC'); if (tNotif != null){tNotif.innerHTML = '<span>' + e + '</span>'}};
+        function toast(e){var tNotif = document.getElementById('toastNotifC'); if (tNotif != null){tNotif.innerHTML = '<span>' + h + '</span>'}};
+        function toast(e){var tNotif = document.getElementById('toastNotifC'); if (tNotif != null){tNotif.innerHTML = '<span>' + g + '</span>'}};
+        function toast(f){var tNotif = document.getElementById('toastNotifC'); if (tNotif != null){tNotif.innerHTML = '<span>' + f + '</span>'}};
+      </script>
+      <script>
+        
+        
+      </script>
+</body>
+</html>
